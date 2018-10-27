@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AngularJS with Material Design</title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+</head>
+<body ng-app="app" ng-cloak>
+
+  <h1>AngularJS with Material Design</h1>
+  <p>Implemented demos <a href="https://material.angularjs.org/latest/">source</a></p>
+
+<h2>Typography</h2>
+<h1 class="md-display-3">Headline</h1>
+<h2 class="md-display-1">Headline</h2>
+<h3 class="md-headline">Headline</h3>
+<p class="md-body-2">Body copy with medium weight.</p>
+<md-button>Button</md-button>
+<p class="md-body-1">Regular body copy <small class="md-caption">with small text</small>.</p>
+<span class="md-caption">Caption</span>
+
+  <h2>Layout</h2>
+  <h3>Flexbox</h3>
+  <div layout="column" class="zero">
+
+    <div flex="33" flex-md="{{ vm.box1Width }}" class="one"></div>
+    <div flex="33" layout="{{ vm.direction }}" layout-md="row" class="two">
+
+      <div flex="20" flex-md="10" hide-lg class="two_one"></div>
+      <div flex="30px" show hide-md="{{ vm.hideBox }}" flex-md="25" class="two_two"></div>
+      <div flex="20" flex-md="65" class="two_three"></div>
+
+    </div>
+    <div flex class="three"></div>
+
+  </div>
+
+  <div>
+
+    <div layout="row">
+
+      <div flex>First item in row</div>
+      <div flex="20">Second item in row</div>
+
+    </div>
+    <div layout="column">
+
+      <div flex="66">First item in column</div>
+      <div flex="33">Second item in column</div>
+
+    </div>
+
+  </div>
+
+  <div>
+
+    <div class="ng-scope layout-row">
+
+      <div class="flex">First item in row</div>
+      <div class="flex-20">Second item in row</div>
+
+    </div>
+    <div class="ng-scope layout-column">
+
+      <div class="flex-33">First item in column</div>
+      <div class="flex-66">Second item in column</div>
+
+    </div>
+
+  </div>
+
+  <div layout="row">
+    <div flex>First item in row</div>
+    <div flex>Second item in row</div>
+  </div>
+  <div layout="column">
+    <div flex>First item in column</div>
+    <div flex>Second item in column</div>
+  </div>
+
+  <div layout="row" layout-xs="column">
+    <div flex>I'm above on mobile, and to the left on larger devices.</div>
+    <div flex>I'm below on mobile, and to the right on larger devices.</div>
+  </div>
+
+  <div layout="row">
+    <div hide show-gt-sm flex>Only show on gt-sm devices.</div>
+    <div hide-gt-sm flex>
+      Shown on small and medium.<br> Hidden on gt-sm devices.
+    </div>
+    <div show hide-gt-md flex>
+      Shown on small and medium size devices.<br> Hidden on gt-md devices.
+    </div>
+    <div hide show-md flex>Shown on medium size devices only.</div>
+    <div hide show-gt-lg flex>Shown on devices larger than 1200px wide only.</div>
+  </div>
+
+  <div layout="row" layout-sm="column">
+    <div flex>I'm above on mobile, and to the left on larger devices.</div>
+    <div flex>I'm below on mobile, and to the right on larger devices.</div>
+  </div>
+
+  <h2>Demos</h2>
+  <p>Material demos as components</p>
+
+  <buttons></buttons>
+  <checkboxes></checkboxes>
+  <cards></cards>
+  <dialogs></dialogs>
+  <grids></grids>
+  <icons></icons>
+  <form-with-errors></form-with-errors>
+  <radios></radios>
+  <selects></selects>
+  <sliders></sliders>
+  <swipes></swipes>
+  <switches></switches>
+  <tabs></tabs>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-aria.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-messages.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.js"></script>
+
+  <script src="js/angularjs/app.module.js"></script>
+  <script src="js/angularjs/app.config.js"></script>
+  <script src="js/angularjs/components/button.component.js"></script>
+  <script src="js/angularjs/components/cards.component.js"></script>
+  <script src="js/angularjs/components/checkboxes.component.js"></script>
+  <script src="js/angularjs/components/dialogs.component.js"></script>
+  <script src="js/angularjs/components/grids.component.js"></script>
+  <script src="js/angularjs/components/icons.component.js"></script>
+  <script src="js/angularjs/components/form-with-errors.component.js"></script>
+  <script src="js/angularjs/components/radios.component.js"></script>
+  <script src="js/angularjs/components/selects.component.js"></script>
+  <script src="js/angularjs/components/sliders.component.js"></script>
+  <script src="js/angularjs/components/swipes.component.js"></script>
+  <script src="js/angularjs/components/switches.component.js"></script>
+  <script src="js/angularjs/components/tabs.component.js"></script>
+</body>
+</html>
